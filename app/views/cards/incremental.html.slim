@@ -1,0 +1,18 @@
+/ script src="incsearch.js" type="text/javascript"
+input#text autocomplete="off" name="pattern" size="40" type="text" value=""
+
+span#status
+
+#view_area
+
+- @cards.each do |card|
+  .card
+    h3.title = card.title
+    .url
+      strong = card.url
+    .text
+      = card.text
+    .created_at
+      = card.created_at
+
+

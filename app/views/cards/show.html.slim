@@ -1,0 +1,15 @@
+p#notice = notice
+
+p
+  strong Title:
+  = @card.title
+p
+  strong Url:
+  = @card.url
+p
+  strong Text:
+  = @card.text
+
+= link_to 'Edit', edit_card_path(@card)
+'|
+= link_to 'Back', cards_path
